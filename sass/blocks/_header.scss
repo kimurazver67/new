@@ -6,6 +6,8 @@
     &__menu{
         display: flex;
         justify-content: space-between;
+        z-index: 2;
+        position: relative;
         .logo{
             color: #C8C8C8;
             font-weight: 600;
