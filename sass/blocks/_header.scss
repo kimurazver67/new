@@ -1,5 +1,8 @@
 .header{
+    min-height: 650px;
     padding-top: 40px;
+    padding-bottom: 50px;
+    background: #FAFAFA;
     &__menu{
         display: flex;
         justify-content: space-between;
@@ -45,5 +48,71 @@
     }
     &__shop-bag{
         margin-right: 30px;
+    }
+    &__promo{
+        position: relative;
+        display: flex;
+        margin-top: 184px;
+        justify-content: space-between;
+        &-text{
+            max-width: 386px;
+            
+        }
+    }
+    &__slider{
+        position: absolute;
+        top: 0;
+        right: -400px;
+        display: flex;
+        .circle{
+            position: absolute;
+            z-index: 0;
+            top: -228px;
+            right: 132px;
+        }
+        .joystick{
+            z-index: 1;
+            width: 574px;
+            height: 327px;
+            margin-right: 94px;
+        }
+        .arrow{
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 70%;
+        }
+        .headphones{
+            z-index: 1;
+            width: 237px;
+            height: 285px;
+        }
+    }
+    &__promo-text{
+        position: relative;
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 47px;
+        line-height: 40px;
+        @include rectangle_title;
+    }
+    &__subtitle{
+        margin-top: 54px;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 28px;
+    }
+    &__btn{
+        margin-top: 48px;
+        width: 230px;
+        height: 73px;
+        background: #1D242B;
+        box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.4);
+        border-radius: 50px;
+        color: #FAFAFA;
+        font-weight: 700;
+        font-size: 25px;
     }
 }

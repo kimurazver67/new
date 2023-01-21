@@ -7,3 +7,16 @@
         background-color:  #0077C0;
     }
 }
+
+@mixin rectangle_title {
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 61px;
+        right: 158px;
+        width: 50px;
+        height: 4px;
+        background-color:  #0077C0;
+    }
+}
