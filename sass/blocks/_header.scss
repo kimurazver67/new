@@ -1,0 +1,49 @@
+.header{
+    padding-top: 40px;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            color: #C8C8C8;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &-list{
+            list-style-type: none;
+            display: flex;
+            
+        }
+        &-item{
+            
+            margin-right: 43px;
+            a{
+                position: relative;
+                text-decoration: none;
+                color: $main-color;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 36px;
+                &:hover{
+                    color: $main-color;
+                }
+               
+            }
+            &:nth-last-child(1){
+                margin-right: 0;
+            }
+        }
+        .active{
+            a{
+                font-weight: 700;
+            }
+            @include rectangle;  
+        }
+    }
+    &__icons{
+        display: flex;
+    }
+    &__shop-bag{
+        margin-right: 30px;
+    }
+}

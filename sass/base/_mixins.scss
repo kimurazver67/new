@@ -1,0 +1,9 @@
+@mixin rectangle {
+    &::after{
+        content: '';
+        display: block;
+        width: 32px;
+        height: 2px;
+        background-color:  #0077C0;
+    }
+}
