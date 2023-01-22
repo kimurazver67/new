@@ -70,21 +70,21 @@
   &__slider {
     position: absolute;
     top: 164px;
-    right: -400px;
+    right: -100px;
     display: flex;
     
     .circle {
       position: absolute;
       z-index: 0;
       top: -228px;
-      right: 132px;
+      right: -118px;
     }
     
     .joystick {
       z-index: 1;
       width: 574px;
       height: 327px;
-      margin-right: 281px;
+
     }
     
     .arrow {
