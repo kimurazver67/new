@@ -10,3 +10,5 @@ search.addEventListener('click', ()=>{
     search.classList.add('active');
     main.classList.remove('active');
 })
+
+

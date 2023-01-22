@@ -1,49 +1,134 @@
-.header{
-    padding-top: 40px;
-    &__menu{
-        display: flex;
-        justify-content: space-between;
-        .logo{
-            color: #C8C8C8;
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 36px;
-        }
-        &-list{
-            list-style-type: none;
-            display: flex;
-            
-        }
-        &-item{
-            
-            margin-right: 43px;
-            a{
-                position: relative;
-                text-decoration: none;
-                color: $main-color;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 36px;
-                &:hover{
-                    color: $main-color;
-                }
-               
-            }
-            &:nth-last-child(1){
-                margin-right: 0;
-            }
-        }
-        .active{
-            a{
-                font-weight: 700;
-            }
-            @include rectangle;  
-        }
+.header {
+  padding-top: 40px;
+  background: #fafafa;
+
+  &_promo{
+    background: #fafafa;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    
+    .logo {
+      color: #c8c8c8;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
     }
-    &__icons{
-        display: flex;
+    
+    &-list {
+      list-style-type: none;
+      display: flex;
     }
-    &__shop-bag{
-        margin-right: 30px;
+    
+    &-item {
+      margin-right: 43px;
+      a {
+        position: relative;
+        text-decoration: none;
+        color: $main-color;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 36px;
+        transition: all 0.6s;
+        &:hover {
+          color: $main-color;
+        }
+      }
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
     }
+    
+    .active {
+      transition: all 0.6s;
+      font-weight: 700;
+      @include rectangle;
+    }
+  }
+  
+  &__icons {
+    display: flex;
+  }
+  
+  &__shop-bag {
+    margin-right: 30px;
+  }
+  
+  &__promo {
+    position: relative;
+    display: flex;
+    padding-top: 184px;
+    justify-content: space-between;
+    &-text {
+      max-width: 386px;
+    }
+  }
+  
+  &__slider {
+    position: absolute;
+    top: 164px;
+    right: -400px;
+    display: flex;
+    
+    .circle {
+      position: absolute;
+      z-index: 0;
+      top: -228px;
+      right: 132px;
+    }
+    
+    .joystick {
+      z-index: 1;
+      width: 574px;
+      height: 327px;
+      margin-right: 94px;
+    }
+    
+    .arrow {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 70%;
+    }
+    
+    .headphones {
+      z-index: 1;
+      width: 237px;
+      height: 285px;
+    }
+  }
+  
+  &__promo-text {
+    position: relative;
+  }
+  
+  &__title {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 40px;
+    @include rectangle_title;
+  }
+  
+  &__subtitle {
+    margin-top: 54px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 28px;
+  }
+  
+  &__btn {
+    margin-top: 48px;
+    width: 230px;
+    height: 73px;
+    background: #1d242b;
+    box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.4);
+    border-radius: 50px;
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 25px;
+  }
 }
