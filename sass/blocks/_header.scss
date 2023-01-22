@@ -1,9 +1,10 @@
 .header {
-  min-height: 650px;
   padding-top: 40px;
-  padding-bottom: 50px;
   background: #fafafa;
-  
+
+  &_promo{
+    background: #fafafa;
+  }
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -59,7 +60,7 @@
   &__promo {
     position: relative;
     display: flex;
-    margin-top: 184px;
+    padding-top: 184px;
     justify-content: space-between;
     &-text {
       max-width: 386px;
@@ -68,7 +69,7 @@
   
   &__slider {
     position: absolute;
-    top: 0;
+    top: 164px;
     right: -400px;
     display: flex;
     
