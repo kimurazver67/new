@@ -1,7 +1,23 @@
 .header {
   padding-top: 40px;
   background: #fafafa;
-
+  .humburger__menu{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 26px;
+    span{
+        transition: .5s all;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $main-color;
+        margin-bottom: 2px;
+    }
+    
+             
+}
   &_promo{
     background: #fafafa;
   }
@@ -71,20 +87,39 @@
     position: absolute;
     top: 164px;
     right: -100px;
-    display: flex;
     
-    .circle {
-      position: absolute;
-      z-index: 0;
-      top: -228px;
-      right: -118px;
+    
+    .circle_red{
+        position: absolute;
+        width: 374px;
+        height: 374px;
+        top: 0;
+        right: 0;
+        background: #FF0000;
+        opacity: 0.4;
+        filter: blur(125px);
+    }
+
+    .circle_blue{
+        position: absolute;
+        width: 374px;
+        height: 374px;
+        left: 0;
+        top: 0;
+        background: #009EFF;
+        opacity: 0.6;
+        filter: blur(125px);
     }
     
+    .image__joy{
+        max-width: 574px;
+        height: auto;
+    }
     .joystick {
       z-index: 1;
-      width: 574px;
-      height: 327px;
-
+      height: auto;
+      width: 100%;
+      position: relative;
     }
     
     .arrow {
